@@ -12,6 +12,10 @@ body{
     align-items: center;
 }
 
+main{
+    padding-bottom: 4rem;
+}
+
 .full{ width: 100%; }
 .container-main{ width: 1200px;}
 .w-30{width: 30%;}
@@ -24,7 +28,12 @@ body{
     align-items: center;
 }
 
-.m-only{ display: none;}
+.m-only{ display: none !important;}
+
+a{ 
+    color: #fff;
+    text-decoration: none;
+}
 
 header{
     height: 5rem;
@@ -94,6 +103,7 @@ header .logo{ width: 3rem; }
 #products-container .products .product-item h4 span{
     font-size: 1.25rem;
     font-weight: 400;
+    text-decoration: none;
 }
 
 #products-container .products .product-item hr{
@@ -425,6 +435,21 @@ footer .copy ul{ margin: 0;}
 .container-icon .form-control{ padding: .375rem .75rem .375rem 2.4rem; }
 
 /* CAROUSEL */
+.products .owl-carousel .owl-nav button.owl-prev,
+.products .owl-carousel .owl-nav button.owl-next,
+.products .owl-theme .owl-dots, .products .owl-theme .owl-nav{ display: none;}
+
+.products .owl-carousel .owl-stage{ display: flex;}
+
+.products .owl-carousel .owl-item:nth-child(4){
+    order: 1;
+}
+
+.products .owl-carousel .owl-item{
+    padding: 0.5rem;
+}
+
+
 .owl-prev, .owl-next{
     position: absolute;
     top: 40%;
