@@ -22,7 +22,7 @@
         </div>
     </header>
     
-    <main class="full d-center">
+    <main class="full d-center ">
         <section class="container-main d-center shopping">
             <div class="page-title full">
                 <h1>Shopping Cart</h1>
@@ -94,7 +94,7 @@
                                     <span>All transactions are secure and encrypted</span>
 
                                     <div class="form-group">
-                                        <div class="full">
+                                        <div class="">
                                             <label for="inputPayment">Payment Method</label>
                                             <select class="form-select" aria-label="Default select example" id="inputPayment">
                                                 <option selected>Select Payment method</option>
@@ -104,12 +104,12 @@
                                             </select>
                                         </div>
 
-                                        <div class="full">
+                                        <div class="">
                                             <label for="inputCardNumber">Card Number</label>
                                             <input type="text" class="form-control" id="inputCardNumber" placeholder="Enter card number">
                                         </div>
 
-                                        <div class="full">
+                                        <div class="">
                                             <label>Expiration Date</label>
                                             <div class="group-sub">
                                                 <input type="text" class="form-control w-50" id="inputCardData" placeholder="Month">
@@ -117,7 +117,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="">
+                                        <div class="cvv">
                                             <input type="text" class="form-control" id="inputPhoneNumber" placeholder="CVV">
                                         </div>
 
@@ -128,7 +128,10 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <button type="submit" id="order">Submit Order</button>
+                                    <div class="finish-order">
+                                        <button type="submit" id="order">Submit Order<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </form>

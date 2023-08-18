@@ -24,6 +24,8 @@ body{
     align-items: center;
 }
 
+.m-only{ display: none;}
+
 header{
     height: 5rem;
     justify-content: center;
@@ -312,7 +314,7 @@ footer .copy ul{ margin: 0;}
 }
 
 .form-contact-area, .form-payment-area, .sidebar-container{
-    box-shadow: 0px 4px 16px 0px rgba(103, 105, 189, 0.10);
+    box-shadow: rgba(103, 105, 189, 0.3) 0px 2px 16px 2px;
     border-radius: 2rem;
     padding: 2rem;
 }
@@ -353,13 +355,24 @@ footer .copy ul{ margin: 0;}
 .form-contact-area .form-group:nth-child(2){
     border-bottom: solid 1px #22234c21;
     padding: 0 0 1rem 0;
-   
+}
+
+.form-payment-area .form-group{
+    border-top: solid 1px #22234c21 !important;
+    padding-top: 1rem;
+    margin-top: 1rem;
 }
 
 .form-contact-area .form-group label,
 .form-payment-area .form-group label{
     margin-bottom: .5rem;
     font-weight: 500;
+}
+
+.form-payment-area .cvv{ padding: 0.8rem 0;}
+
+#inputCardData{
+    padding: 0.375rem 0.75rem;
 }
 
 .form-contact-area h3:nth-child(3){
@@ -404,6 +417,144 @@ footer .copy ul{ margin: 0;}
 }
 
 .sidebar-container .shipping, .itens-cart{ border-top: solid 1px #22234c5c !important; }
+
+.form-payment-area button#order{
+    margin: 2rem 0;
+}
+
+.form-payment-area .finish-order{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* CAROUSEL */
+.owl-prev, .owl-next{
+    position: absolute;
+    top: 40%;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+}
+
+.owl-carousel .owl-nav button.owl-prev{ left: -15px; }
+.owl-carousel .owl-nav button.owl-next{ right: -15px; }
+
+.owl-carousel .owl-nav button.owl-prev span,
+.owl-carousel .owl-nav button.owl-next span{
+    font-size: 2rem;
+    color: #22234c;
+}   
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev{
+    color: #22234c;
+    border: solid 2px #22234c;
+    border-radius: 100%;
+    background: #fff;
+}
+
+@media (max-width: 500px){
+    .w-30, .w-50, .w-70, .w-98,
+    .container-main, .full{width: 100vw !important;}
+
+    header .container-main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main{ padding: 1rem;}
+
+    #products-container .call-area h1 { font-size: 2.2rem; }
+    #products-container .call-area h2 { font-size: 1.4rem; }
+    #products-container .call-area { margin: 3.625rem 0; }
+
+    #products-container .products { flex-direction: column; }
+
+    #products-container .products .product-item.best-choose{ position: relative;}
+    #products-container .products .product-item.best-choose .m-only{
+        position: absolute;
+        top: 0;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #products-container .products .product-item.best-choose .m-only img{
+        width: 35%;
+        margin: -5px 0 1rem 0;
+    }
+
+    #products-container .products .product-item.best-choose .m-only span{ 
+        text-decoration: auto;
+        background: #fff;
+        border-radius: 4rem;
+        color: #6769bd;
+        font-size: 14px;
+        padding: 0.5rem 2rem;
+        font-weight: 500;
+    }
+    #products-container .products .product-item.best-choose { order: -1;}
+    #products-container .products { 
+        padding: 2rem 1rem;
+        margin: 1rem;
+    }
+
+    #products-container .products .product-item div p.full{
+        width: -webkit-fill-available !important;
+    }
+
+    .testemonials .owl-carousel .owl-item .item{
+        margin: 2rem;
+    }
+
+    .owl-carousel .owl-nav button.owl-next{ right: 0;}
+    .owl-carousel .owl-nav button.owl-prev{ left: 0;}
+     
+
+    .container-main-shopping{ flex-direction: column-reverse; }
+
+    .shopping .page-title{ 
+        padding: 2rem 0 1rem 0;
+        margin: 0 1rem;
+    }
+    .shopping h1{ font-size: 2rem; }
+
+    .form-contact-area, .form-payment-area, .sidebar-container{
+        box-shadow: (103, 105, 189, 0.3) 0px 2px 16px 2px;
+        padding: 2rem 1rem;
+        margin: 1rem;
+    }
+
+    .sidebar-container .itens-cart img { width: 16%; }
+    footer{  height: auto; }
+    footer .container-main{ padding: 2rem 1rem; }
+    footer nav ul{  margin: 1.5rem 0 1rem 0; }
+
+    footer ul{ 
+        gap: 0.5rem;
+        padding: 0;
+    }
+
+    footer ul:nth-child(3){
+        flex-direction: column;
+        width: 100%;
+        padding: 0 2rem;
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+
+    footer hr{ margin: 1rem 0 0 0; }
+    footer .copy{ flex-direction: column-reverse; }
+
+    footer .copy ul{
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+
 
 
 

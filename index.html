@@ -31,7 +31,9 @@
                 </div>
                 <div class="products">
                     <div class="product-item">
-                        <h3>Buy 3 Bottles & Save 32%</h3>
+                        <div class="area-title">
+                            <h3>Buy 3 Bottles & Save 32%</h3>
+                        </div>
                         <div class="d-center">
                             <img src="./src/imgs/3bottles.svg" alt=" product 3 bottles">
                             <p class="full">Retal Price <span id="old-price">$179.97</span></p>
@@ -48,6 +50,10 @@
 
                     <div class="product-item best-choose">
                         <h3>Buy 5 Bottles & Save 32%</h3>
+                        <div class="m-only">
+                            <img src="./src/imgs/tag.svg">
+                            <span>Polular</span>
+                        </div>
                         <div class="d-center">
                             <img src="./src/imgs/5bottles.svg" alt=" product 3 bottles">
                             <p class="full">Retal Price <span id="old-price">$179.97</span></p>
@@ -216,6 +222,23 @@
         $(document).ready(function(){
             $(".owl-carousel").owlCarousel({
                 nav: true,
+                loop: true,
+                responsiveClass:true,
+                responsive:{
+                    0:{
+                        items:1,
+                        nav:true
+                    },
+                    600:{
+                        items:3,
+                        nav:false
+                    },
+                    1000:{
+                        items:3,
+                        nav:true,
+                        loop:false
+                    }
+                }
             });
             
         });
