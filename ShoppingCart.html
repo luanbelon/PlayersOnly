@@ -23,28 +23,135 @@
     </header>
     
     <main class="full d-center">
-        <section class="container-main d-center">
-            <div class="order-content-info">
-                <section class="Contact Information">
-
-
-                </section>
-
+        <section class="container-main d-center shopping">
+            <div class="page-title full">
+                <h1>Shopping Cart</h1>
             </div>
-            <div class="sidebar">
-                <h3>items <span>(1)</span></h3>
-                <div class="itens-cart">
-                    <img src="./src/imgs/5bottles.svg">
-                    <p>Players Only 500mg Gummies - 5 Bottles</p>
-                    <p class="price">$157.85</p>
+            <div class="container-main-shopping d-center">
+                <div class="order-content-info w-70">
+                    <section class="Contact Information">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-contact-area">
+                                    
+                                    <h3>Contact Information</h3>
+
+                                    <div class="form-group">
+                                        <div class="full">
+                                            <label for="inputEmail4">Email Address</label>
+                                            <input type="email" class="form-control" id="inputEmail4" placeholder="Enter you email address">
+                                        </div>
+                                    </div>
+
+                                    <h3>Shipping Address</h3>
+
+                                    <div class="form-group">
+                                        <div class="w-50">
+                                            <label for="inputFirstName">First Name</label>
+                                            <input type="text" class="form-control" id="inputFirstName" placeholder="First name">
+                                        </div>
+                                        <div class="w-50">
+                                            <label for="inputLastName">Last Name</label>
+                                            <input type="text" class="form-control" id="inputLastName" placeholder="Last name">
+                                        </div>
+                                        <div class="w-50">
+                                            <label for="inputStreet">Street</label>
+                                            <input type="text" class="form-control" id="inputStreetName" placeholder="Street name">
+                                        </div>
+                                        <div class="w-50">
+                                            <label for="inputApartment">Apartment / House</label>
+                                            <input type="text" class="form-control" id="inputApartment" placeholder="Apartment, house, suite number">
+                                        </div>
+                                        <div class="w-50">
+                                            <label for="inputCity">City / State</label>
+                                            <select class="form-select" aria-label="Default select example" id="inputCity">
+                                                <option selected>Select a City or State</option>
+                                                <option value="1">City One</option>
+                                                <option value="2">City Two</option>
+                                                <option value="3">City Three</option>
+                                            </select>
+                                        </div>
+                                        <div class="w-50">
+                                            <label for="inputZIPCode">ZIP Code</label>
+                                            <input type="text" class="form-control" id="inputZIPCode" placeholder="ZIP Code">
+                                        </div>
+                                        <div class="full">
+                                            <label for="floatingTextarea">Delivery Instructions</label>
+                                            <textarea class="form-control" 
+                                                placeholder="Enter any specific instructions, such as gate codes, special directions, or preferred delivery times." 
+                                                id="floatingTextarea">
+                                            </textarea>
+                                        </div>
+                                        <div class="full">
+                                            <label for="inputPhoneNumber">Phone Number</label>
+                                            <input type="text" class="form-control" id="inputPhoneNumber" placeholder="Phone Number">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-payment-area">
+                                    <h3>Payment Information</h3>
+                                    <span>All transactions are secure and encrypted</span>
+
+                                    <div class="form-group">
+                                        <div class="full">
+                                            <label for="inputPayment">Payment Method</label>
+                                            <select class="form-select" aria-label="Default select example" id="inputPayment">
+                                                <option selected>Select Payment method</option>
+                                                <option value="1">Maestro</option>
+                                                <option value="2">Dinner</option>
+                                                <option value="3">AMEX</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="full">
+                                            <label for="inputCardNumber">Card Number</label>
+                                            <input type="text" class="form-control" id="inputCardNumber" placeholder="Enter card number">
+                                        </div>
+
+                                        <div class="full">
+                                            <label>Expiration Date</label>
+                                            <div class="group-sub">
+                                                <input type="text" class="form-control w-50" id="inputCardData" placeholder="Month">
+                                                <input type="text" class="form-control w-50" id="inputCardData" placeholder="Year">
+                                            </div>
+                                        </div>
+
+                                        <div class="">
+                                            <input type="text" class="form-control" id="inputPhoneNumber" placeholder="CVV">
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                                            <label class="form-check-label" for="gridCheck">
+                                                Billing address same as shipping
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <button type="submit" id="order">Submit Order</button>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+
                 </div>
-                <div class="shipping">
-                    <p>Shipping</p>
-                    <p class="price">Free</p>
-                </div>
-                <div class="total">
-                    <p>Total</p>
-                    <p class="price">$157.85</p>
+                <div class="sidebar w-30">
+                    <div class="sidebar-container">
+                        <h3>items <span>(1)</span></h3>
+                        <div class="itens-cart">
+                            <img src="./src/imgs/5bottles.svg">
+                            <p>Players Only 500mg Gummies - 5 Bottles</p>
+                            <p class="price">$157.85</p>
+                        </div>
+                        <div class="shipping">
+                            <p>Shipping</p>
+                            <p class="price">Free</p>
+                        </div>
+                        <div class="total">
+                            <p>Total</p>
+                            <p class="price">$157.85</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
